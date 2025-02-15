@@ -1,4 +1,3 @@
-# NextDr.
 # Health & Nutrition App Database
 
 ## Overview
@@ -39,8 +38,20 @@ Tracks user fitness activities.
 | user_id    | CHAR(36) (FK) | References Users table |
 | steps      | INT | Steps taken |
 | calories_burned | FLOAT | Calories burned |
-| heart_rate | FLOAT | Heart rate (bpm) |
+| heart_points | FLOAT | Heart Points earned for activities |
+| daily_goals | JSON | JSON object storing goals (steps, calories, water, etc.) |
+| activity_type | VARCHAR(255) | Type of activity (e.g., walking, running) |
 | activity_date | TIMESTAMP | Date of activity |
+
+Example JSON for `daily_goals`:
+```json
+{
+  "steps_goal": 10000,
+  "heart_points_goal": 45,
+  "calories_goal": 500,
+  "water_goal": 3
+}
+```
 
 ### **Health Goals Table** (`HealthGoals`)
 Stores user-defined health goals.
