@@ -64,7 +64,7 @@ Stores health trend insights.
 ## Database Setup
 ### **1. Clone the Repository**
 ```bash
-git clone https://github.com/KunapareddyLikhith/health_nutrition_app.git
+git clone https://github.com/KunapareddyLikhith/NextDr..git
 cd health_nutrition_app
 ```
 
